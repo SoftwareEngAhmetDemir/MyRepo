@@ -1,0 +1,481 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+*{
+    /* perspective: 800px; */
+    margin: 0;
+    
+}
+body{
+    height: 2000px;
+}
+
+
+::-webkit-scrollbar{
+    scrollbar-width: thin;
+      width: 12px;
+     
+    
+}
+::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+::-webkit-scrollbar-thumb{
+    background:rgba(61, 61, 68, 0.753);
+    border-radius: 6px;
+    height: 10px;
+   
+}
+.mytxt{
+    text-align: center;
+    position: relative;
+    writing-mode: vertical-lr;
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+}
+
+.back{
+  position: absolute;
+    width: 100%;
+    height:100%;
+   z-index:1;
+   background-image: url('pic.jpg');
+   background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* opacity: 0.5; */
+}  
+.cbck{
+    display: block;
+    position: relative;
+   height: 600px; 
+   width: 100%;
+   background-color:black;
+   z-index: 2;
+}
+/* ////////////////////////////////// */
+.fatherW{
+    transform: scaleX(-1);
+    height: 200px;
+    width: 70%;
+    overflow: auto;
+    font-size-adjust: 0.58;
+    margin: auto auto;
+}
+.fatherW .writing{
+transform: scaleX(-1);
+padding: 10px;
+font-size-adjust: 0.58;
+
+}
+/* /////////////////////////// */
+.fatherW::-webkit-scrollbar{
+    scrollbar-width: thin;
+      width: 12px;
+     
+    
+}
+.fatherW::-webkit-scrollbar-track {
+    background: green;        /* color of the tracking area */
+  }
+  .fatherW::-webkit-scrollbar-thumb{
+    background:rgba(61, 61, 68, 0.753);
+    border-radius: 6px;
+    height: 10px;
+   
+}
+/* //////////////////////////// */
+
+.album{
+    width: 90%;
+    margin: auto auto;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+
+
+}
+.album .imgc{
+    width: 20%;
+    height: 25%;
+   margin-left: 2px;
+}
+
+/* ///////////////////////////////////// */
+@media (min-width: 1281px) {
+
+    /* CSS */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 49% 2% 49%;
+        background-color: #2196F3;
+        grid-template-rows: 200px 200px;
+        border-radius: 10px;
+        /* align-items: center; */
+        /* padding: 10px; */
+      }
+      
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        /* padding-left: 10px; */
+        font-size: 20px;
+        /* text-align: center; */
+      }
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        /* background-color: #2196F3; */
+        /* padding: 10px; */
+      }
+      .grid-container1 .child1{
+          /* border: 1px solid black; */
+      }
+      .grid-container2 {
+          display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .father{
+          display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: 20px auto;
+        height: 30%;
+      }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+        /* CSS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 49% 2% 49%;
+            background-color: #2196F3;
+            grid-template-rows: 170px 170px;
+            border-radius: 10px;
+            /* align-items: center; */
+            /* padding: 10px; */
+          }
+          
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            /* padding-left: 10px; */
+            font-size: 20px;
+            /* text-align: center; */
+          }
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+          }
+          .grid-container1 .child1{
+              /* border: 1px solid black; */
+          }
+          .grid-container2 {
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+          }
+          .father{
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: 20px auto;
+            height: 30%;
+          }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .album{
+        width: 90%;
+        margin: auto auto;
+        /* background-color: blue; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+    
+    
+    }
+    .album .imgc{
+        width: 100%;
+        height: 25%;
+       /* margin-left: 2px; */
+    }
+    /* CSS */
+        /* CSS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 49% 2% 49%;
+            background-color: #2196F3;
+            grid-template-rows: 120px 120px;
+            border-radius: 10px;
+            /* align-items: center; */
+            /* padding: 10px; */
+          }
+          
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            /* padding-left: 10px; */
+            font-size: 20px;
+            /* text-align: center; */
+          }
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+          }
+          .grid-container1 .child1{
+              /* border: 1px solid black; */
+          }
+          .grid-container2 {
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+          }
+          .father{
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: 20px auto;
+            height: 30%;
+          }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .album{
+        width: 60%;
+      
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center; 
+        /* flex-wrap: wrap; */
+ display: block;
+    padding: auto auto;
+    }
+    .album .imgc{
+        /* flex-basis: 10px; */
+       
+        width: 40%;
+        height: 20%;
+       /* margin-left: 1px; */
+       margin-top: 1px;
+    }
+    /* CSS */
+        /* CSS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 49% 2% 49%;
+            background-color: #2196F3;
+            grid-template-rows: 150px 150px;
+            border-radius: 10px;
+            /* align-items: center; */
+            /* padding: 10px; */
+          }
+          
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            /* padding-left: 10px; */
+            font-size: 20px;
+            /* text-align: center; */
+          }
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+          }
+          .grid-container1 .child1{
+              /* border: 1px solid black; */
+          }
+          .grid-container2 {
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+          }
+          .father{
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: 20px auto;
+            height: 30%;
+          }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .album{
+        width: 90%;
+        margin: auto auto;
+        /* background-color: blue; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+    
+    
+    }
+    .album .imgc{
+        width: 100%;
+        height: 25%;
+       /* margin-left: 2px; */
+    }
+    /* CSS */
+        /* CSS */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 1% 49%;
+            background-color: #2196F3;
+            grid-template-rows: 130px 130px;
+            border-radius: 10px;
+            /* align-items: center; */
+            /* padding: 10px; */
+          }
+          
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            /* padding-left: 10px; */
+            font-size: 20px;
+            /* text-align: center; */
+          }
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            /* background-color: #2196F3; */
+            /* padding: 10px; */
+          }
+          .grid-container1 .child1{
+              /* border: 1px solid black; */
+          }
+          .grid-container2 {
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+          }
+          .father{
+              display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: 20px auto;
+            height: 30%;
+          }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 150px) and (max-width: 480px) {
+    .album{
+        width: 90%;
+        margin: auto auto;
+        /* background-color: blue; */
+        /* display: flex;
+        justify-content: center; */
+        display: block;
+    
+    
+    }
+    .album .imgc{
+        width: 100%;
+        height: 25%;
+       /* margin-left: 2px; */
+    }
+    /* CSS */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 1% 49%;
+        background-color: #2196F3;
+        grid-template-rows: 50px 50px;
+        border-radius: 10px;
+        /* align-items: center; */
+        /* padding: 10px; */
+      }
+      
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        /* padding-left: 10px; */
+        font-size: 5px;
+        /* text-align: center; */
+      }
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        /* background-color: #2196F3; */
+        /* padding: 10px; */
+      }
+      .grid-container1 .child1{
+          /* border: 1px solid black; */
+      }
+      .grid-container2 {
+          display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .father{
+          display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: 20px auto;
+        height: 30%;
+      }
+    
+  }
